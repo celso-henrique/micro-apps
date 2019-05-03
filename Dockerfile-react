@@ -1,11 +1,13 @@
 # build environment
 FROM node:10.15.3-alpine as builder
 
+COPY header /header
+
 WORKDIR /app
 
-COPY package.json .
+COPY react-app/package.json .
 RUN npm install --silent
-COPY . .
+COPY react-app .
 RUN npm run build
 
 # production environment

@@ -1,3 +1,4 @@
+import 'header/CustomHeader';
 import { Component } from '@angular/core';
 
 @Component({

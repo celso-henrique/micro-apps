@@ -10,10 +10,13 @@ services:
     build: .
   react-app:
     build:
-      context: ./react-app
+      context: .
+      dockerfile: Dockerfile-react
   vue-app:
     build:
-      context: ./vue-app
+      context: .
+      dockerfile: Dockerfile-vue
   angular-app:
     build:
-      context: ./angular-app
+      context: .
+      dockerfile: Dockerfile-angular

@@ -6,7 +6,7 @@ import 'header/CustomHeader'
 function App() {
   return (
     <div className="App">
-      <custom-header />
+      <custom-header react />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
