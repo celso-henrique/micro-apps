@@ -1,4 +1,3 @@
-/* eslint-disable */
 class CustomHeader extends HTMLElement {
   constructor() {
     super()
@@ -8,6 +7,10 @@ class CustomHeader extends HTMLElement {
       <style>
         :host() {
           display: block;
+        }
+        :host([react]) .react, :host([vue]) .vue, :host([angular]) .angular,  a:hover {
+          background: red;
+          color: white;
         }
         header {
           background: white;
@@ -26,10 +29,6 @@ class CustomHeader extends HTMLElement {
           padding: 20px;
           text-decoration: none;
           color: red;
-        }
-        :host([react]) .react, :host([vue]) .vue, :host([angular]) .angular,  a:hover {
-          background: red;
-          color: white;
         }
       </style>
       <header>

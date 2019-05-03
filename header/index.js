@@ -1,1 +1,1 @@
-export * from './Header'
+import './CustomHeader'
