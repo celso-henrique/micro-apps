@@ -8,7 +8,7 @@ With docker and docker-compose installed just run:
 $ docker-compose up
 ```
 
-And access your localhost:8080.
+And access http://localhost:8080.
 
 # License
 
