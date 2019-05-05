@@ -1,3 +1,4 @@
-angular-app/node_modules
-react-app/node_modules
-vue-app/node_modules
+**/node_modules/
+**/dist/
+**/build/
+.DS_STORE
