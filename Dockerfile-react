@@ -6,7 +6,8 @@ COPY header /header
 WORKDIR /app
 
 COPY react-app/package.json .
-RUN npm install --silent
+COPY react-app/package-lock.json .
+RUN npm ci --silent
 COPY react-app .
 RUN npm run build
 

@@ -6,7 +6,8 @@ COPY header /header
 WORKDIR /app
 
 COPY vue-app/package.json .
-RUN npm install --silent
+COPY vue-app/package-lock.json .
+RUN npm ci --silent
 COPY vue-app .
 RUN npm run build
 

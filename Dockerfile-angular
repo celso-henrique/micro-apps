@@ -6,7 +6,8 @@ COPY header /header
 WORKDIR /app
 
 COPY angular-app/package.json .
-RUN npm install --silent
+COPY angular-app/package-lock.json .
+RUN npm ci --silent
 COPY angular-app .
 RUN npm run build
 
