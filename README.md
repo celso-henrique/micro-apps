@@ -1,6 +1,6 @@
 Micro Apps
 ====================
-This application exemplifies the use of micro frontends with the micro apps approach.
+This application to show the use of micro frontends with the micro apps approach.
 
 # Running locally
 With docker and docker-compose installed just run:
